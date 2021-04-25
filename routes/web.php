@@ -29,5 +29,20 @@ Route::get('/model', function(){
     //return $user->save();
    // return $products;
    // return \App\User::all(); //Collection
-    return \App\User::where('name','Dr. Madalyn McClure PhD');
+    //return \App\User::where('name','Dr. Madalyn McClure PhD')->get();
+   // return \App\User::where('name','Dr. Madalyn McClure PhD')->first();
+
+/*    $user = \App\User::create([
+      'name' => 'Alberto Alexandre',
+      'email' => 'teste5@teste.com',
+      'password' => bcrypt('12345678')
+   ]);
+    dd($user); */
+    $user = \App\User::find(80);
+    $user -> update([
+      'name'=>'Atualizando2 com Mass Update'
+    ]); // true ou false
+    dd($user);
+    return \App\User::all();
+ // return \App\User::paginate(10); // paginar dados no eloquente do laravel
 });
