@@ -38,11 +38,11 @@ Route::get('/model', function(){
       'password' => bcrypt('12345678')
    ]);
     dd($user); */
-    $user = \App\User::find(80);
+ /*    $user = \App\User::find(80);
     $user -> update([
       'name'=>'Atualizando2 com Mass Update'
     ]); // true ou false
-    dd($user);
+    dd($user); */
     return \App\User::all();
  // return \App\User::paginate(10); // paginar dados no eloquente do laravel
 });

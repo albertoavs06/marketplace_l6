@@ -1,0 +1,4 @@
+Sobre relacionamentos no laravel
+// 1:1 - Um pra Um (usuario e loja) - hasOne e belongsTo
+// 1:N - Um pra Muitos (Loja e Produtos) - hasMany e belongsTo
+// N:N - Muitos pra Muitos (Produtos e Categorias) - belongsToMany

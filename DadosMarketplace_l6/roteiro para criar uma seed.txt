@@ -1,0 +1,5 @@
+Roteiro para criar uma seed
+
+No DatabaseSeeder.php tem que ter a chamada da seeder: UsersTableSeeder
+php artisan make:seeder UsersTableSeeder
+php artisan db:seed
