@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth'); // verifica se o usuario tá logado ou não
+        $this->middleware('auth'); // verifica se o usuario ta logado ou nao 
     }
 
     /**
@@ -26,11 +26,3 @@ class HomeController extends Controller
         return view('home');
     }
 }
-
-/*
-Middlewares: Dentro de aplicações web, ele é um código ou programa que é executado entre a requisição(Request)
- e a nossa aplicação(é a lógica executada pelo acesso a uma determinada rota)
-
-Request -> Middleware-> Aplicacao (Acesso qualquer rota) <- Marketplace
-
-*/
