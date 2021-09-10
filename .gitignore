@@ -3,7 +3,7 @@
 /public/storage
 /storage/*.key
 /vendor
-/DadosMarketplace_l6
+DadosMarketplace_l6/
 .env
 .env.backup
 .phpunit.result.cache

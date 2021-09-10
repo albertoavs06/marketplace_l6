@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -53,5 +57,9 @@
             @yield('content')
         </main>
     </div>
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="node_modules/jquery/dist/jquery.js"></script>
+     <script src="node_modules/popper.js/dist/popper.js" ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
